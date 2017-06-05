@@ -1,0 +1,32 @@
+{
+    "Statement": [
+        {
+            "Action": [
+                "sdb:*"
+            ],
+            "Resource": [
+                "arn:aws:sdb:*:*:domain/apt.example.com"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "sns:*"
+            ],
+            "Resource": [
+                "arn:aws:sns:*:*:repoman_topic"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::apt-example-com",
+                "arn:aws:s3:::apt-example-com/*"
+            ],
+            "Effect": "Allow"
+        }
+    ]
+}

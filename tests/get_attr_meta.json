@@ -1,0 +1,62 @@
+{
+  "Attributes": [
+    {
+      "Name": "archs",
+      "Value": "all"
+    },
+    {
+      "Name": "archs",
+      "Value": "amd64"
+    },
+    {
+      "Name": "archs",
+      "Value": "i386"
+    },
+    {
+      "Name": "comps",
+      "Value": "main"
+    },
+    {
+      "Name": "comps",
+      "Value": "nightly"
+    },
+    {
+      "Name": "test_data",
+      "Value": ""
+    },
+    {
+      "Name": "origin",
+      "Value": "climate.com"
+    },
+    {
+      "Name": "topic_name",
+      "Value": ""
+    },
+    {
+      "Name": "label",
+      "Value": "climate.com"
+    },
+    {
+      "Name": "dists",
+      "Value": "jessie"
+    },
+    {
+      "Name": "dists",
+      "Value": "xenial"
+    }
+  ],
+  "ResponseMetadata": {
+    "RetryAttempts": 0,
+    "HTTPStatusCode": 200,
+    "BoxUsage": "0.0000094182",
+    "RequestId": "1564a46c-0c76-f6e7-57ab-731497f26335",
+    "HTTPHeaders": {
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding",
+      "server": "Amazon SimpleDB",
+      "connection": "close",
+      "date": "Mon, 26 Jun 2017 01:13:31 GMT",
+      "content-type": "text/xml"
+    }
+  }
+}

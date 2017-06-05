@@ -1,0 +1,1042 @@
+{
+  "Items": [
+    {
+      "Attributes": [
+        {
+          "Value": "e3dc33ad3aa9c3ff81020bdfd629e171f6ac2c0e",
+          "Name": "sha1"
+        },
+        {
+          "Value": "main",
+          "Name": "component"
+        },
+        {
+          "Value": "1:testdeb_1.0.0-test_all.deb",
+          "Name": "filename"
+        },
+        {
+          "Value": "6bfe58c48ab34585b8c1bc671e8103c499e17af2a3a4e237a58bd57fc8d1501d",
+          "Name": "sha256"
+        },
+        {
+          "Value": "1304",
+          "Name": "size"
+        },
+        {
+          "Value": "testdeb",
+          "Name": "name"
+        },
+        {
+          "Value": "Package: testdeb\nVersion: 1:1.0.0-test\nLicense: unknown\nVendor: n@C02SV1F1G8WL\nArchitecture: all\nMaintainer: <n@C02SV1F1G8WL>\nInstalled-Size: 0\nSection: default\nPriority: extra\nHomepage: http://example.com/no-uri-given\nDescription: no description given\n\n",
+          "Name": "controltxt0"
+        },
+        {
+          "Value": "xenial",
+          "Name": "distribution"
+        },
+        {
+          "Value": "1:1.0.0-test",
+          "Name": "version"
+        },
+        {
+          "Value": "all",
+          "Name": "architecture"
+        },
+        {
+          "Value": "c9a1e0a35cc3706e8003edbc8bf60e7f",
+          "Name": "md5"
+        }
+      ],
+      "Name": "c6ccdb9e12ee8ace827f13fdb3f1dd89210aec73be1ed5c35265735e323a5d0f"
+    },
+    {
+      "Attributes": [
+        {
+          "Value": "f58ebb9e618d3ce1293c1a6e7dcb7e1d30ca242f",
+          "Name": "sha1"
+        },
+        {
+          "Value": "main",
+          "Name": "component"
+        },
+        {
+          "Value": "1:testdeb_1.1.0-test2_all.deb",
+          "Name": "filename"
+        },
+        {
+          "Value": "7323ab214df42f89a5df4eedc4c0aeece14bff31425f2dd7bd90d2d21d56163a",
+          "Name": "sha256"
+        },
+        {
+          "Value": "1292",
+          "Name": "size"
+        },
+        {
+          "Value": "testdeb",
+          "Name": "name"
+        },
+        {
+          "Value": "Package: testdeb\nVersion: 1:1.1.0-test2\nLicense: unknown\nVendor: n@C02SV1F1G8WL\nArchitecture: all\nMaintainer: <n@C02SV1F1G8WL>\nInstalled-Size: 0\nSection: default\nPriority: extra\nHomepage: http://example.com/no-uri-given\nDescription: no description given\n\n",
+          "Name": "controltxt0"
+        },
+        {
+          "Value": "xenial",
+          "Name": "distribution"
+        },
+        {
+          "Value": "1:1.1.0-test2",
+          "Name": "version"
+        },
+        {
+          "Value": "all",
+          "Name": "architecture"
+        },
+        {
+          "Value": "36611a3c94464e954e54e5c385ff647e",
+          "Name": "md5"
+        }
+      ],
+      "Name": "443b9d7264c8b5705bbad56cbf340df82d35305efe6ab67f77558df1286e9c7f"
+    },
+    {
+      "Attributes": [
+        {
+          "Value": "a923bd5489b8e5ec7d3e96fb1b700c29d81725df",
+          "Name": "sha1"
+        },
+        {
+          "Value": "main",
+          "Name": "component"
+        },
+        {
+          "Value": "1:testdeb_1.1.0-test_all.deb",
+          "Name": "filename"
+        },
+        {
+          "Value": "a8e6bca9936270a057a670658bd4e43aaf1791495734d3d666be12815b4a56e2",
+          "Name": "sha256"
+        },
+        {
+          "Value": "1300",
+          "Name": "size"
+        },
+        {
+          "Value": "testdeb",
+          "Name": "name"
+        },
+        {
+          "Value": "Package: testdeb\nVersion: 1:1.1.0-test\nLicense: unknown\nVendor: n@C02SV1F1G8WL\nArchitecture: all\nMaintainer: <n@C02SV1F1G8WL>\nInstalled-Size: 0\nSection: default\nPriority: extra\nHomepage: http://example.com/no-uri-given\nDescription: no description given\n\n",
+          "Name": "controltxt0"
+        },
+        {
+          "Value": "xenial",
+          "Name": "distribution"
+        },
+        {
+          "Value": "1:1.1.0-test",
+          "Name": "version"
+        },
+        {
+          "Value": "all",
+          "Name": "architecture"
+        },
+        {
+          "Value": "9d72f9a5e0d739dcc5241f7e50e5addd",
+          "Name": "md5"
+        }
+      ],
+      "Name": "2203419b67b04ba963906867ea237c57afbfaf70c54ee8975ea9fbc39ef21599"
+    },
+    {
+      "Attributes": [
+        {
+          "Value": "2e3f6aca44459898fd1e05ab659ba1cd0aa9a613",
+          "Name": "sha1"
+        },
+        {
+          "Value": "main",
+          "Name": "component"
+        },
+        {
+          "Value": "2:testdeb_0.0.0-test_all.deb",
+          "Name": "filename"
+        },
+        {
+          "Value": "7f29b9631765fb459c046fbda1586767e4d8a9ad330dff86bfae91c684aa3f30",
+          "Name": "sha256"
+        },
+        {
+          "Value": "1294",
+          "Name": "size"
+        },
+        {
+          "Value": "testdeb",
+          "Name": "name"
+        },
+        {
+          "Value": "Package: testdeb\nVersion: 2:0.0.0-test\nLicense: unknown\nVendor: n@C02SV1F1G8WL\nArchitecture: all\nMaintainer: <n@C02SV1F1G8WL>\nInstalled-Size: 0\nSection: default\nPriority: extra\nHomepage: http://example.com/no-uri-given\nDescription: no description given\n\n",
+          "Name": "controltxt0"
+        },
+        {
+          "Value": "xenial",
+          "Name": "distribution"
+        },
+        {
+          "Value": "2:0.0.0-test",
+          "Name": "version"
+        },
+        {
+          "Value": "all",
+          "Name": "architecture"
+        },
+        {
+          "Value": "c8cd10216d5e99a18971c80531d10b01",
+          "Name": "md5"
+        }
+      ],
+      "Name": "f8a735f3f5c486ae5447477bd9eb2cd8399586410ab2570c9c83cd7021d8faf9"
+    },
+    {
+      "Attributes": [
+        {
+          "Value": "a5d28ae2f23e726a797349d7dd5f21baf8aa02b4",
+          "Name": "sha1"
+        },
+        {
+          "Value": "main",
+          "Name": "component"
+        },
+        {
+          "Value": "testdeb_1:0.0.0-test_all.deb",
+          "Name": "filename"
+        },
+        {
+          "Value": "547500652257bac6f6bc83f0667d0d66c8abd1382c776c4de84b89d0f550ab7f",
+          "Name": "sha256"
+        },
+        {
+          "Value": "910",
+          "Name": "size"
+        },
+        {
+          "Value": "testdeb",
+          "Name": "name"
+        },
+        {
+          "Value": "Package: testdeb\nVersion: 1:0.0.0-test\nSection: base\nPriority: extra\nArchitecture: all\nInstalled-Size: 0\nMaintainer: Nathan Mehl <n@climate.com>\nDescription: testdeb\n a bogus debian package for testing dpkg builds\n\n",
+          "Name": "controltxt0"
+        },
+        {
+          "Value": "xenial",
+          "Name": "distribution"
+        },
+        {
+          "Value": "1:0.0.0-test",
+          "Name": "version"
+        },
+        {
+          "Value": "all",
+          "Name": "architecture"
+        },
+        {
+          "Value": "149e61536a9fe36374732ec95cf7945d",
+          "Name": "md5"
+        }
+      ],
+      "Name": "f46a49ee9fefc357038c7f0d6916ef596a8ed36c449d525b60a2189701e6ccdc"
+    },
+    {
+      "Attributes": [
+        {
+          "Value": "85b006304079b32cd10283f55d009ba51a79b480",
+          "Name": "sha1"
+        },
+        {
+          "Value": "main",
+          "Name": "component"
+        },
+        {
+          "Value": "hashicorp-consul-template_0.15-tcc01_amd64.deb",
+          "Name": "filename"
+        },
+        {
+          "Value": "77a3eaee90d8edabf0a73b3d3e7148d298e4e0461b3a1737b23dc78fce6da22e",
+          "Name": "sha256"
+        },
+        {
+          "Value": "3521222",
+          "Name": "size"
+        },
+        {
+          "Value": "hashicorp-consul-template",
+          "Name": "name"
+        },
+        {
+          "Value": "Package: hashicorp-consul-template\nVersion: 0.15-tcc01\nLicense: unknown\nVendor: none\nArchitecture: amd64\nMaintainer: <n@salacious.local>\nInstalled-Size: 12194\nSection: default\nPriority: extra\nHomepage: http://example.com/no-uri-given\nDescription: no descri",
+          "Name": "controltxt0"
+        },
+        {
+          "Value": "xenial",
+          "Name": "distribution"
+        },
+        {
+          "Value": "0.15-tcc01",
+          "Name": "version"
+        },
+        {
+          "Value": "amd64",
+          "Name": "architecture"
+        },
+        {
+          "Value": "3fe3996aea835bb0fd9c9a7595ee969e",
+          "Name": "md5"
+        },
+        {
+          "Value": "ption given\n\n",
+          "Name": "controltxt1"
+        }
+      ],
+      "Name": "1e8e8e19da74171997becf335029ac9006d499da2eeec3b1b390efe0911a6d4c"
+    },
+    {
+      "Attributes": [
+        {
+          "Value": "88e9312553b083de908c875a2d581d6a407f00b0",
+          "Name": "sha1"
+        },
+        {
+          "Value": "main",
+          "Name": "component"
+        },
+        {
+          "Value": "hashicorp-consul-template_0.15-tcc01_i386.deb",
+          "Name": "filename"
+        },
+        {
+          "Value": "baaa65ff64c1b3d1d90f48f87cedf49112a209d8b3af80b8b9422059c42caf00",
+          "Name": "sha256"
+        },
+        {
+          "Value": "1342",
+          "Name": "size"
+        },
+        {
+          "Value": "hashicorp-consul-template",
+          "Name": "name"
+        },
+        {
+          "Value": "Package: hashicorp-consul-template\nVersion: 0.15-tcc01\nLicense: unknown\nVendor: n@C02SV1F1G8WL\nArchitecture: i386\nMaintainer: <n@C02SV1F1G8WL>\nInstalled-Size: 0\nSection: default\nPriority: extra\nHomepage: http://example.com/no-uri-given\nDescription: no desc",
+          "Name": "controltxt0"
+        },
+        {
+          "Value": "xenial",
+          "Name": "distribution"
+        },
+        {
+          "Value": "0.15-tcc01",
+          "Name": "version"
+        },
+        {
+          "Value": "i386",
+          "Name": "architecture"
+        },
+        {
+          "Value": "8fce38500395227d83095c2e1ef1f473",
+          "Name": "md5"
+        },
+        {
+          "Value": "ription given\n\n",
+          "Name": "controltxt1"
+        }
+      ],
+      "Name": "99215a20d2727ba3f24e0690c11469aed6f8504d761c9a50992ab407079d2d6f"
+    },
+    {
+      "Attributes": [
+        {
+          "Value": "a5d28ae2f23e726a797349d7dd5f21baf8aa02b4",
+          "Name": "sha1"
+        },
+        {
+          "Value": "nightly",
+          "Name": "component"
+        },
+        {
+          "Value": "testdeb_1:0.0.0-test_all.deb",
+          "Name": "filename"
+        },
+        {
+          "Value": "547500652257bac6f6bc83f0667d0d66c8abd1382c776c4de84b89d0f550ab7f",
+          "Name": "sha256"
+        },
+        {
+          "Value": "910",
+          "Name": "size"
+        },
+        {
+          "Value": "testdeb",
+          "Name": "name"
+        },
+        {
+          "Value": "Package: testdeb\nVersion: 1:0.0.0-test\nSection: base\nPriority: extra\nArchitecture: all\nInstalled-Size: 0\nMaintainer: Nathan Mehl <n@climate.com>\nDescription: testdeb\n a bogus debian package for testing dpkg builds\n\n",
+          "Name": "controltxt0"
+        },
+        {
+          "Value": "xenial",
+          "Name": "distribution"
+        },
+        {
+          "Value": "1:0.0.0-test",
+          "Name": "version"
+        },
+        {
+          "Value": "all",
+          "Name": "architecture"
+        },
+        {
+          "Value": "149e61536a9fe36374732ec95cf7945d",
+          "Name": "md5"
+        }
+      ],
+      "Name": "3c8924ee9e489d334adde9923b710e2b971d3f2bdf52dd4ce91dfd9356d901da"
+    },
+    {
+      "Attributes": [
+        {
+          "Value": "e3dc33ad3aa9c3ff81020bdfd629e171f6ac2c0e",
+          "Name": "sha1"
+        },
+        {
+          "Value": "nightly",
+          "Name": "component"
+        },
+        {
+          "Value": "1:testdeb_1.0.0-test_all.deb",
+          "Name": "filename"
+        },
+        {
+          "Value": "6bfe58c48ab34585b8c1bc671e8103c499e17af2a3a4e237a58bd57fc8d1501d",
+          "Name": "sha256"
+        },
+        {
+          "Value": "1304",
+          "Name": "size"
+        },
+        {
+          "Value": "testdeb",
+          "Name": "name"
+        },
+        {
+          "Value": "Package: testdeb\nVersion: 1:1.0.0-test\nLicense: unknown\nVendor: n@C02SV1F1G8WL\nArchitecture: all\nMaintainer: <n@C02SV1F1G8WL>\nInstalled-Size: 0\nSection: default\nPriority: extra\nHomepage: http://example.com/no-uri-given\nDescription: no description given\n\n",
+          "Name": "controltxt0"
+        },
+        {
+          "Value": "xenial",
+          "Name": "distribution"
+        },
+        {
+          "Value": "1:1.0.0-test",
+          "Name": "version"
+        },
+        {
+          "Value": "all",
+          "Name": "architecture"
+        },
+        {
+          "Value": "c9a1e0a35cc3706e8003edbc8bf60e7f",
+          "Name": "md5"
+        }
+      ],
+      "Name": "c5d4cdcbf307f285d1dfd74fc77a3083a838b6d3e4d1410fbe5159e392449a6d"
+    },
+    {
+      "Attributes": [
+        {
+          "Value": "a923bd5489b8e5ec7d3e96fb1b700c29d81725df",
+          "Name": "sha1"
+        },
+        {
+          "Value": "nightly",
+          "Name": "component"
+        },
+        {
+          "Value": "1:testdeb_1.1.0-test_all.deb",
+          "Name": "filename"
+        },
+        {
+          "Value": "a8e6bca9936270a057a670658bd4e43aaf1791495734d3d666be12815b4a56e2",
+          "Name": "sha256"
+        },
+        {
+          "Value": "1300",
+          "Name": "size"
+        },
+        {
+          "Value": "testdeb",
+          "Name": "name"
+        },
+        {
+          "Value": "Package: testdeb\nVersion: 1:1.1.0-test\nLicense: unknown\nVendor: n@C02SV1F1G8WL\nArchitecture: all\nMaintainer: <n@C02SV1F1G8WL>\nInstalled-Size: 0\nSection: default\nPriority: extra\nHomepage: http://example.com/no-uri-given\nDescription: no description given\n\n",
+          "Name": "controltxt0"
+        },
+        {
+          "Value": "xenial",
+          "Name": "distribution"
+        },
+        {
+          "Value": "1:1.1.0-test",
+          "Name": "version"
+        },
+        {
+          "Value": "all",
+          "Name": "architecture"
+        },
+        {
+          "Value": "9d72f9a5e0d739dcc5241f7e50e5addd",
+          "Name": "md5"
+        }
+      ],
+      "Name": "c0bb45d54ee2c81a74f74b2f423578146b9aeaa2f5ecef56bf90ed2977b007be"
+    },
+    {
+      "Attributes": [
+        {
+          "Value": "f58ebb9e618d3ce1293c1a6e7dcb7e1d30ca242f",
+          "Name": "sha1"
+        },
+        {
+          "Value": "nightly",
+          "Name": "component"
+        },
+        {
+          "Value": "1:testdeb_1.1.0-test2_all.deb",
+          "Name": "filename"
+        },
+        {
+          "Value": "7323ab214df42f89a5df4eedc4c0aeece14bff31425f2dd7bd90d2d21d56163a",
+          "Name": "sha256"
+        },
+        {
+          "Value": "1292",
+          "Name": "size"
+        },
+        {
+          "Value": "testdeb",
+          "Name": "name"
+        },
+        {
+          "Value": "Package: testdeb\nVersion: 1:1.1.0-test2\nLicense: unknown\nVendor: n@C02SV1F1G8WL\nArchitecture: all\nMaintainer: <n@C02SV1F1G8WL>\nInstalled-Size: 0\nSection: default\nPriority: extra\nHomepage: http://example.com/no-uri-given\nDescription: no description given\n\n",
+          "Name": "controltxt0"
+        },
+        {
+          "Value": "xenial",
+          "Name": "distribution"
+        },
+        {
+          "Value": "1:1.1.0-test2",
+          "Name": "version"
+        },
+        {
+          "Value": "all",
+          "Name": "architecture"
+        },
+        {
+          "Value": "36611a3c94464e954e54e5c385ff647e",
+          "Name": "md5"
+        }
+      ],
+      "Name": "1a7b7486c7d763b49faf6613d4bb43c0a347b2848a9ec5b7a916be58103ab8b6"
+    },
+    {
+      "Attributes": [
+        {
+          "Value": "2e3f6aca44459898fd1e05ab659ba1cd0aa9a613",
+          "Name": "sha1"
+        },
+        {
+          "Value": "nightly",
+          "Name": "component"
+        },
+        {
+          "Value": "2:testdeb_0.0.0-test_all.deb",
+          "Name": "filename"
+        },
+        {
+          "Value": "7f29b9631765fb459c046fbda1586767e4d8a9ad330dff86bfae91c684aa3f30",
+          "Name": "sha256"
+        },
+        {
+          "Value": "1294",
+          "Name": "size"
+        },
+        {
+          "Value": "testdeb",
+          "Name": "name"
+        },
+        {
+          "Value": "Package: testdeb\nVersion: 2:0.0.0-test\nLicense: unknown\nVendor: n@C02SV1F1G8WL\nArchitecture: all\nMaintainer: <n@C02SV1F1G8WL>\nInstalled-Size: 0\nSection: default\nPriority: extra\nHomepage: http://example.com/no-uri-given\nDescription: no description given\n\n",
+          "Name": "controltxt0"
+        },
+        {
+          "Value": "xenial",
+          "Name": "distribution"
+        },
+        {
+          "Value": "2:0.0.0-test",
+          "Name": "version"
+        },
+        {
+          "Value": "all",
+          "Name": "architecture"
+        },
+        {
+          "Value": "c8cd10216d5e99a18971c80531d10b01",
+          "Name": "md5"
+        }
+      ],
+      "Name": "831b05653fc9c7f9efb51b67b7e2cab76f7579165c42beb3a61f651dee54d127"
+    },
+    {
+      "Attributes": [
+        {
+          "Value": "efa19aee680fbbb98f1915ee14c18ef902dfa025",
+          "Name": "sha1"
+        },
+        {
+          "Value": "nightly",
+          "Name": "component"
+        },
+        {
+          "Value": "3:testdeb_1.1.0-test2_all.deb",
+          "Name": "filename"
+        },
+        {
+          "Value": "4d3ef2fe026ee7fae63584e2361ec3176f24fe448f48925189bb60fb2e72f2c6",
+          "Name": "sha256"
+        },
+        {
+          "Value": "1298",
+          "Name": "size"
+        },
+        {
+          "Value": "testdeb",
+          "Name": "name"
+        },
+        {
+          "Value": "Package: testdeb\nVersion: 3:1.1.0-test2\nLicense: unknown\nVendor: n@C02SV1F1G8WL\nArchitecture: all\nMaintainer: <n@C02SV1F1G8WL>\nInstalled-Size: 0\nSection: default\nPriority: extra\nHomepage: http://example.com/no-uri-given\nDescription: no description given\n\n",
+          "Name": "controltxt0"
+        },
+        {
+          "Value": "xenial",
+          "Name": "distribution"
+        },
+        {
+          "Value": "3:1.1.0-test2",
+          "Name": "version"
+        },
+        {
+          "Value": "all",
+          "Name": "architecture"
+        },
+        {
+          "Value": "85813d0688494314fa37b4bca6939782",
+          "Name": "md5"
+        }
+      ],
+      "Name": "9cb856b383443055d3969158480d37c9f1eb37eee53694fa510fff0e3c6ac69a"
+    },
+    {
+      "Attributes": [
+        {
+          "Value": "dedbe9b395b22ff18d161bb9caaabaea09b2da5b",
+          "Name": "sha1"
+        },
+        {
+          "Value": "nightly",
+          "Name": "component"
+        },
+        {
+          "Value": "3:testdeb_1.1.0-test2_amd64.deb",
+          "Name": "filename"
+        },
+        {
+          "Value": "4ab8523efef0a343f8cf301d67d4cb71b76b7761f1023523940928c223d02437",
+          "Name": "sha256"
+        },
+        {
+          "Value": "1296",
+          "Name": "size"
+        },
+        {
+          "Value": "testdeb",
+          "Name": "name"
+        },
+        {
+          "Value": "Package: testdeb\nVersion: 3:1.1.0-test2\nLicense: unknown\nVendor: n@C02SV1F1G8WL\nArchitecture: amd64\nMaintainer: <n@C02SV1F1G8WL>\nInstalled-Size: 0\nSection: default\nPriority: extra\nHomepage: http://example.com/no-uri-given\nDescription: no description given\n",
+          "Name": "controltxt0"
+        },
+        {
+          "Value": "xenial",
+          "Name": "distribution"
+        },
+        {
+          "Value": "3:1.1.0-test2",
+          "Name": "version"
+        },
+        {
+          "Value": "amd64",
+          "Name": "architecture"
+        },
+        {
+          "Value": "568728506dd4374cb34c12dbf9e9a148",
+          "Name": "md5"
+        },
+        {
+          "Value": "\n",
+          "Name": "controltxt1"
+        }
+      ],
+      "Name": "ff57ebf3aa6066f18459f384ae0ea5033ed769d529a25106bd4874efce0aa480"
+    },
+    {
+      "Attributes": [
+        {
+          "Value": "efa19aee680fbbb98f1915ee14c18ef902dfa025",
+          "Name": "sha1"
+        },
+        {
+          "Value": "main",
+          "Name": "component"
+        },
+        {
+          "Value": "3:testdeb_1.1.0-test2_all.deb",
+          "Name": "filename"
+        },
+        {
+          "Value": "4d3ef2fe026ee7fae63584e2361ec3176f24fe448f48925189bb60fb2e72f2c6",
+          "Name": "sha256"
+        },
+        {
+          "Value": "1298",
+          "Name": "size"
+        },
+        {
+          "Value": "testdeb",
+          "Name": "name"
+        },
+        {
+          "Value": "Package: testdeb\nVersion: 3:1.1.0-test2\nLicense: unknown\nVendor: n@C02SV1F1G8WL\nArchitecture: all\nMaintainer: <n@C02SV1F1G8WL>\nInstalled-Size: 0\nSection: default\nPriority: extra\nHomepage: http://example.com/no-uri-given\nDescription: no description given\n\n",
+          "Name": "controltxt0"
+        },
+        {
+          "Value": "xenial",
+          "Name": "distribution"
+        },
+        {
+          "Value": "3:1.1.0-test2",
+          "Name": "version"
+        },
+        {
+          "Value": "all",
+          "Name": "architecture"
+        },
+        {
+          "Value": "85813d0688494314fa37b4bca6939782",
+          "Name": "md5"
+        }
+      ],
+      "Name": "70fb757c5605ad9d21c5f461e0797ffe90939f455135cc16bc473fd3ff11f250"
+    },
+    {
+      "Attributes": [
+        {
+          "Value": "dedbe9b395b22ff18d161bb9caaabaea09b2da5b",
+          "Name": "sha1"
+        },
+        {
+          "Value": "main",
+          "Name": "component"
+        },
+        {
+          "Value": "3:testdeb_1.1.0-test2_amd64.deb",
+          "Name": "filename"
+        },
+        {
+          "Value": "4ab8523efef0a343f8cf301d67d4cb71b76b7761f1023523940928c223d02437",
+          "Name": "sha256"
+        },
+        {
+          "Value": "1296",
+          "Name": "size"
+        },
+        {
+          "Value": "testdeb",
+          "Name": "name"
+        },
+        {
+          "Value": "Package: testdeb\nVersion: 3:1.1.0-test2\nLicense: unknown\nVendor: n@C02SV1F1G8WL\nArchitecture: amd64\nMaintainer: <n@C02SV1F1G8WL>\nInstalled-Size: 0\nSection: default\nPriority: extra\nHomepage: http://example.com/no-uri-given\nDescription: no description given\n",
+          "Name": "controltxt0"
+        },
+        {
+          "Value": "xenial",
+          "Name": "distribution"
+        },
+        {
+          "Value": "3:1.1.0-test2",
+          "Name": "version"
+        },
+        {
+          "Value": "amd64",
+          "Name": "architecture"
+        },
+        {
+          "Value": "568728506dd4374cb34c12dbf9e9a148",
+          "Name": "md5"
+        },
+        {
+          "Value": "\n",
+          "Name": "controltxt1"
+        }
+      ],
+      "Name": "a68046e58ad66b3fb481a12b1f7cbe6608782ff62552574d970ca98b1f1cc96a"
+    },
+    {
+      "Attributes": [
+        {
+          "Value": "main",
+          "Name": "component"
+        },
+        {
+          "Value": "apt-transport-s3",
+          "Name": "name"
+        },
+        {
+          "Value": "Format: 3.0 (quilt)\nSource: apt-transport-s3\nBinary: apt-transport-s3\nArchitecture: all\nVersion: 1.2.1-1\nMaintainer: Marcin Kulisz (kuLa) <debian@kulisz.net>\nUploaders: David Watson <dwatson@debian.org>\nHomepage: https://github.com/BashtonLtd/apt-transport",
+          "Name": "controltxt0"
+        },
+        {
+          "Value": "xenial",
+          "Name": "distribution"
+        },
+        {
+          "Value": "1.2.1-1",
+          "Name": "version"
+        },
+        {
+          "Value": "source",
+          "Name": "architecture"
+        },
+        {
+          "Value": "-s3\nStandards-Version: 3.9.6\nVcs-Browser: https://github.com/BashtonLtd/apt-transport-s3/tree/debian/sid\nVcs-Git: https://github.com/BashtonLtd/apt-transport-s3.git\nBuild-Depends: python (>= 2.6.6-3), debhelper (>= 9)\nPackage-List: apt-transport-s3 deb adm",
+          "Name": "controltxt1"
+        },
+        {
+          "Value": "n.tar.xz\n fa801cc1da5a9acbbebdce30a1f32b260b50452125d84eedd45b917504206584 1986\n apt-transport-s3_1.2.1-1.dsc\nFiles: 8dfb207307b5fcfc917d5fbc6003ff95 53764\n apt-transport-s3_1.2.1.orig.tar.gz\n 76eb07b79e5cf34ba966a5cdd2817086 41920 apt-transport-s3_1.2.1-1",
+          "Name": "controltxt4"
+        },
+        {
+          "Value": "pt-transport-s3_1.2.1-1.dsc\nChecksums-Sha256: 3935a698d3ca56ff02ffe133578c67d1e22b6599ab72643ac3b2564f7786dfcf 53764\n apt-transport-s3_1.2.1.orig.tar.gz\n 3b95f5222410637602f01d3120b0047a187afb8605e6fc444675aa599abc04c1 41920\n apt-transport-s3_1.2.1-1.debia",
+          "Name": "controltxt3"
+        },
+        {
+          "Value": "apt-transport-s3_1.2.1-1.dsc",
+          "Name": "files"
+        },
+        {
+          "Value": "apt-transport-s3_1.2.1.orig.tar.gz",
+          "Name": "files"
+        },
+        {
+          "Value": "apt-transport-s3_1.2.1-1.debian.tar.xz",
+          "Name": "files"
+        },
+        {
+          "Value": "in optional arch=all\nChecksums-Sha1: fcaab2d352dda3c6e8894afef7ecf62f05367637 53764\n apt-transport-s3_1.2.1.orig.tar.gz\n 5833e6929583f1038c6aa2a26d264ed49f09106d 41920\n apt-transport-s3_1.2.1-1.debian.tar.xz\n 36c3bf0921f13de8176b3a86ecff1cac5532ff73 1986 a",
+          "Name": "controltxt2"
+        },
+        {
+          "Value": ".debian.tar.xz\n eca184b019fc93b069ae4bbe94ab9e3b 1986 apt-transport-s3_1.2.1-1.dsc\n\n",
+          "Name": "controltxt5"
+        }
+      ],
+      "Name": "fd9c79813a7f80c1fde07db4ce7a0592e9cfb373e9af682da7b6ce4479933cfe"
+    },
+    {
+      "Attributes": [
+        {
+          "Value": "main",
+          "Name": "component"
+        },
+        {
+          "Value": "apt-transport-s3",
+          "Name": "name"
+        },
+        {
+          "Value": "Format: 3.0 (quilt)\nSource: apt-transport-s3\nBinary: apt-transport-s3\nArchitecture: all\nVersion: 1.2.1-1\nMaintainer: Marcin Kulisz (kuLa) <debian@kulisz.net>\nUploaders: David Watson <dwatson@debian.org>\nHomepage: https://github.com/BashtonLtd/apt-transport",
+          "Name": "controltxt0"
+        },
+        {
+          "Value": "jessie",
+          "Name": "distribution"
+        },
+        {
+          "Value": "1.2.1-1",
+          "Name": "version"
+        },
+        {
+          "Value": "source",
+          "Name": "architecture"
+        },
+        {
+          "Value": "-s3\nStandards-Version: 3.9.6\nVcs-Browser: https://github.com/BashtonLtd/apt-transport-s3/tree/debian/sid\nVcs-Git: https://github.com/BashtonLtd/apt-transport-s3.git\nBuild-Depends: python (>= 2.6.6-3), debhelper (>= 9)\nPackage-List: apt-transport-s3 deb adm",
+          "Name": "controltxt1"
+        },
+        {
+          "Value": "n.tar.xz\n fa801cc1da5a9acbbebdce30a1f32b260b50452125d84eedd45b917504206584 1986\n apt-transport-s3_1.2.1-1.dsc\nFiles: 8dfb207307b5fcfc917d5fbc6003ff95 53764\n apt-transport-s3_1.2.1.orig.tar.gz\n 76eb07b79e5cf34ba966a5cdd2817086 41920 apt-transport-s3_1.2.1-1",
+          "Name": "controltxt4"
+        },
+        {
+          "Value": "pt-transport-s3_1.2.1-1.dsc\nChecksums-Sha256: 3935a698d3ca56ff02ffe133578c67d1e22b6599ab72643ac3b2564f7786dfcf 53764\n apt-transport-s3_1.2.1.orig.tar.gz\n 3b95f5222410637602f01d3120b0047a187afb8605e6fc444675aa599abc04c1 41920\n apt-transport-s3_1.2.1-1.debia",
+          "Name": "controltxt3"
+        },
+        {
+          "Value": "apt-transport-s3_1.2.1.orig.tar.gz",
+          "Name": "files"
+        },
+        {
+          "Value": "apt-transport-s3_1.2.1-1.dsc",
+          "Name": "files"
+        },
+        {
+          "Value": "apt-transport-s3_1.2.1-1.debian.tar.xz",
+          "Name": "files"
+        },
+        {
+          "Value": "in optional arch=all\nChecksums-Sha1: fcaab2d352dda3c6e8894afef7ecf62f05367637 53764\n apt-transport-s3_1.2.1.orig.tar.gz\n 5833e6929583f1038c6aa2a26d264ed49f09106d 41920\n apt-transport-s3_1.2.1-1.debian.tar.xz\n 36c3bf0921f13de8176b3a86ecff1cac5532ff73 1986 a",
+          "Name": "controltxt2"
+        },
+        {
+          "Value": ".debian.tar.xz\n eca184b019fc93b069ae4bbe94ab9e3b 1986 apt-transport-s3_1.2.1-1.dsc\n\n",
+          "Name": "controltxt5"
+        }
+      ],
+      "Name": "15e7f348fafbe44103100b9a6edfeee4b90a100f59eab6970ef97a73c01addb9"
+    },
+    {
+      "Attributes": [
+        {
+          "Value": "efa19aee680fbbb98f1915ee14c18ef902dfa025",
+          "Name": "sha1"
+        },
+        {
+          "Value": "main",
+          "Name": "component"
+        },
+        {
+          "Value": "3:testdeb_1.1.0-test2_all.deb",
+          "Name": "filename"
+        },
+        {
+          "Value": "4d3ef2fe026ee7fae63584e2361ec3176f24fe448f48925189bb60fb2e72f2c6",
+          "Name": "sha256"
+        },
+        {
+          "Value": "1298",
+          "Name": "size"
+        },
+        {
+          "Value": "testdeb",
+          "Name": "name"
+        },
+        {
+          "Value": "Package: testdeb\nVersion: 3:1.1.0-test2\nLicense: unknown\nVendor: n@C02SV1F1G8WL\nArchitecture: all\nMaintainer: <n@C02SV1F1G8WL>\nInstalled-Size: 0\nSection: default\nPriority: extra\nHomepage: http://example.com/no-uri-given\nDescription: no description given\n\n",
+          "Name": "controltxt0"
+        },
+        {
+          "Value": "jessie",
+          "Name": "distribution"
+        },
+        {
+          "Value": "3:1.1.0-test2",
+          "Name": "version"
+        },
+        {
+          "Value": "all",
+          "Name": "architecture"
+        },
+        {
+          "Value": "85813d0688494314fa37b4bca6939782",
+          "Name": "md5"
+        }
+      ],
+      "Name": "e7f9e67b76cf394ec069c1b1a6106483928358a870d5c56ae14e54dda28613d3"
+    },
+    {
+      "Attributes": [
+        {
+          "Value": "dedbe9b395b22ff18d161bb9caaabaea09b2da5b",
+          "Name": "sha1"
+        },
+        {
+          "Value": "main",
+          "Name": "component"
+        },
+        {
+          "Value": "3:testdeb_1.1.0-test2_amd64.deb",
+          "Name": "filename"
+        },
+        {
+          "Value": "4ab8523efef0a343f8cf301d67d4cb71b76b7761f1023523940928c223d02437",
+          "Name": "sha256"
+        },
+        {
+          "Value": "1296",
+          "Name": "size"
+        },
+        {
+          "Value": "testdeb",
+          "Name": "name"
+        },
+        {
+          "Value": "Package: testdeb\nVersion: 3:1.1.0-test2\nLicense: unknown\nVendor: n@C02SV1F1G8WL\nArchitecture: amd64\nMaintainer: <n@C02SV1F1G8WL>\nInstalled-Size: 0\nSection: default\nPriority: extra\nHomepage: http://example.com/no-uri-given\nDescription: no description given\n",
+          "Name": "controltxt0"
+        },
+        {
+          "Value": "jessie",
+          "Name": "distribution"
+        },
+        {
+          "Value": "3:1.1.0-test2",
+          "Name": "version"
+        },
+        {
+          "Value": "amd64",
+          "Name": "architecture"
+        },
+        {
+          "Value": "568728506dd4374cb34c12dbf9e9a148",
+          "Name": "md5"
+        },
+        {
+          "Value": "\n",
+          "Name": "controltxt1"
+        }
+      ],
+      "Name": "733d51466ee402992e8f08d9fd6ce2b00f793fc835c0d853bfa48bd9a0317089"
+    }
+  ],
+  "ResponseMetadata": {
+    "BoxUsage": "0.0002697387",
+    "RequestId": "be9aefce-e74c-6ef9-aae7-3eaa636307e0",
+    "HTTPHeaders": {
+      "vary": "Accept-Encoding",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "date": "Sun, 25 Jun 2017 02:27:00 GMT",
+      "content-type": "text/xml",
+      "server": "Amazon SimpleDB"
+    },
+    "RetryAttempts": 0,
+    "HTTPStatusCode": 200
+  }
+}

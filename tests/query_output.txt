@@ -1,0 +1,22 @@
+
+name                       distribution    component    architecture    version
+apt-transport-s3           jessie          main         source          1.2.1-1
+apt-transport-s3           xenial          main         source          1.2.1-1
+hashicorp-consul-template  xenial          main         amd64           0.15-tcc01
+hashicorp-consul-template  xenial          main         i386            0.15-tcc01
+testdeb                    jessie          main         all             3:1.1.0-test2
+testdeb                    jessie          main         amd64           3:1.1.0-test2
+testdeb                    xenial          main         all             1:0.0.0-test
+testdeb                    xenial          main         all             1:1.0.0-test
+testdeb                    xenial          main         all             1:1.1.0-test
+testdeb                    xenial          main         all             1:1.1.0-test2
+testdeb                    xenial          main         all             2:0.0.0-test
+testdeb                    xenial          main         all             3:1.1.0-test2
+testdeb                    xenial          main         amd64           3:1.1.0-test2
+testdeb                    xenial          nightly      all             1:0.0.0-test
+testdeb                    xenial          nightly      all             1:1.0.0-test
+testdeb                    xenial          nightly      all             1:1.1.0-test
+testdeb                    xenial          nightly      all             1:1.1.0-test2
+testdeb                    xenial          nightly      all             2:0.0.0-test
+testdeb                    xenial          nightly      all             3:1.1.0-test2
+testdeb                    xenial          nightly      amd64           3:1.1.0-test2

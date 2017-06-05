@@ -1,0 +1,12 @@
+* in general the code is way less of a mess than the original circa-2011
+  hacked-together-in-a-weekend version, but there's still a lot of
+  room for improvement: lots of overly complicated functions that
+  could stand decomposition
+
+* test coverage could be...much better
+
+* probably still lots of room for optimization on the publish process;
+  currently writing out 2 distributions + 3 components to S3 takes about
+  30 seconds
+
+* docstrings, pydoc, pylint...

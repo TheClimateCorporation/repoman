@@ -1,0 +1,80 @@
+# replace this with your local simpledb domain
+#
+#simpledb-domain = apt.example.com
+
+# replace this with the S3 bucket you are publishing to
+#
+#s3-bucket = apt-example-com
+
+# if set, repoman will attempt to assume this IAM role
+# before accessing any AWS APIs (other than sts.AssumeRole itself)
+#
+#aws-role=arn:aws:iam::99999999999:role/repoman-rw
+
+# the S3 bucket ACL defaults to private, which is safe
+# for internal use using apt-transport-s3.  If you want
+# to publish a public repository on S3, set this to public,
+# but this means that anyone in the world can browse
+# and pull packages from your repo
+#
+#s3-acl=public
+
+# the default s3 region is us-east-1 aka US/Standard
+#
+#s3-region=us-east-1
+
+# if you are signing your apt releases, you must set
+# gpg-home to point to a directory with the keyring
+# of the signing key
+#
+#gpg-home=~/.gnupg
+
+# if you are signing your apt releases, you must
+# set gpg-signer to the id of your signing key.
+#
+# you may optionally generate multiple signatures
+# by setting gpg-signer to a list: [foo,bar]
+#
+#gpg-signer=signer@example.com
+#gpg-signer=B02EDBDB
+#gpg-signer=[repo@example.com,B02EDBDB]
+
+# you may optionally pick a pinentry program
+# (only one though, sorry)
+#
+#gpg-pinentry-path=/usr/local/MacGPG2/libexec/pinentry-mac.app/Contents/MacOS/pinentry-mac
+#gpg-pinentry-path=/usr/local/bin/pinentry-curses
+#gpg-pinentry-path=/usr/local/bin/pinentry
+#gpg-pinentry-path=/usr/bin/pinentry
+
+# you may optionally set the gpg passphrase here, but
+# this is potentially very dangerous behavior!
+#
+#gpg-passphrase=I do not really value my security!
+#
+# if you have multiple signing keys, you may specify
+# passphrases for them in the same order:
+#
+#gpg-passphrase=[I do not really value my security!,I really dont!]
+#
+# if one key in the list is not locked, put an empty item
+# in the corresponding place in the passphrase list:
+#
+#gpg-passphrase=[locked,,locked]
+
+# by default, repoman will run the system health checkup before
+# every possible command. this can be slow and annoying if you
+# are already sure that things are set up correctly; uncomment
+# this directive to skip the checkup:
+#
+#skip-checkup
+
+# enable debug logging (only for the apt_repoman module, not
+# for boto3/botocore)
+#
+#debug
+
+# pass in a custom log configuration file (e.g. to enable
+# debug logging for botocore, or to turn on file logging)
+#
+#log-config=/etc/repoman/logconfig.json

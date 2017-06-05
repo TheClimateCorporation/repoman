@@ -1,0 +1,10 @@
+#!./target/python/bin/python
+
+# Python imports
+import sys
+import signal
+
+from apt_repoman import cli
+
+signal.signal(signal.SIGINT, lambda x, y: sys.exit(1))
+sys.exit(cli.main(sys.argv))
