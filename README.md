@@ -3,7 +3,7 @@
 ## Introduction
 
 Back in 2011, a scrappy young startup called "Weatherbill" found itself with a
-corondum: we were using Debian's `dpkg` and `apt` tools to package and serve
+conundrum: we were using Debian's `dpkg` and `apt` tools to package and serve
 binary software within our own infrastructure, but we were also starting to use
 Amazon's Elastic Mapreduce to create ephemeral Hadoop clusters for geospatial
 and weather data processing, and it turned out that spinning up a 2,000-node
