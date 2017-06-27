@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 
 __name__ = 'apt-repoman'
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 setup(
     name=__name__,
@@ -12,8 +12,8 @@ setup(
     description='A high performance Debian APT repository based on Amazon Web Services',
     author='Nathan J. Mehl',
     author_email='n@climate.com',
-    url='https://github.com/theclimatecorporation/apt-repoman',
-    download_url='https://github.com/theclimatecorporation/repoman/tarball/__version__',
+    url='https://github.com/theclimatecorporation/repoman',
+    download_url='https://github.com/theclimatecorporation/repoman/tarball/%s' % __version__,
     keywords=['apt', 'debian', 'dpkg', 'packaging'],
     package_data={'': ['*.json']},
     install_requires=[
