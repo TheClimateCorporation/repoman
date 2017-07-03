@@ -787,16 +787,17 @@ class Repodb(object):
                             source_files, source_gz_files,
                             leaf_release_files):
         path_data = []
+        suffix = (self._connection.profile_name, self._connection.role_arn)
         # assemble lists of paths to write to s3
         for dist in dist_release_files.keys():
             # dist_release_files and dist_release_sigs are only
             # keyed by dist name
             path_data.append(
                 ('dists/{0}/Release'.format(dist),
-                 dist_release_files[dist]))
+                 dist_release_files[dist]) + suffix)
             if dist_release_sigs:
                 path_data.append(('dists/{0}/Release.gpg'.format(dist),
-                                  dist_release_sigs[dist]))
+                                  dist_release_sigs[dist]) + suffix)
             # everything else is a walk down the comps/archs tree
             for comp in self.comps:
                 for arch in self.archs:
@@ -805,28 +806,28 @@ class Repodb(object):
                     elif arch == 'source':
                         path_data.append(
                             ('dists/{0}/{1}/source/Sources'.format(dist, comp),
-                             source_files[dist][comp][arch]))
+                             source_files[dist][comp][arch]) + suffix)
                         path_data.append(
                             ('dists/{0}/{1}/source/Sources.gz'.format(
                                 dist, comp),
-                             source_gz_files[dist][comp][arch]))
+                             source_gz_files[dist][comp][arch]) + suffix)
                         path_data.append(
                             ('dists/{0}/{1}/source/Release'.format(
                                 dist, comp),
-                             leaf_release_files[dist][comp][arch]))
+                             leaf_release_files[dist][comp][arch]) + suffix)
                     else:
                         path_data.append(
                             ('dists/{0}/{1}/binary-{2}/Packages'.format(
                                 dist, comp, arch),
-                             package_files[dist][comp][arch]))
+                             package_files[dist][comp][arch]) + suffix)
                         path_data.append(
                             ('dists/{0}/{1}/binary-{2}/Packages.gz'.format(
                                 dist, comp, arch),
-                             package_gz_files[dist][comp][arch]))
+                             package_gz_files[dist][comp][arch]) + suffix)
                         path_data.append(
                             ('dists/{0}/{1}/binary-{2}/Release'.format(
                                 dist, comp, arch),
-                             leaf_release_files[dist][comp][arch]))
+                             leaf_release_files[dist][comp][arch]) + suffix)
         return path_data
 
     def _create_sorted_package_dict(self, sources, latest_versions=0):

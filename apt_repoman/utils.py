@@ -9,9 +9,11 @@ from apt_repoman.connection import Connection
 LOG = logging.getLogger(__name__)
 
 
-def write_path(bucket_name, path, data):
+def write_path(bucket_name, path, data, profile_name='', role_arn=''):
     now = time.time()
-    connection = Connection()
+    connection = Connection(
+        profile_name=profile_name,
+        role_arn=role_arn)
     s3 = connection.session.resource('s3')
     LOG.info('writing s3://%s/%s', bucket_name, path)
     if path.endswith('gz'):

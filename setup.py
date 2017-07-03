@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 
 __name__ = 'apt-repoman'
-__version__ = '1.0.2'
+__version__ = '1.0.3'
 
 setup(
     name=__name__,
