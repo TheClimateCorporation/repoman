@@ -15,9 +15,9 @@ from botocore.stub import Stubber, ANY
 
 @pytest.fixture
 def setup():
-    s3 = botocore.session.get_session().create_client('s3')
-    sdb = botocore.session.get_session().create_client('sdb')
-    sns = botocore.session.get_session().create_client('sns')
+    s3 = botocore.session.get_session().create_client('s3', region_name='us-east-1')
+    sdb = botocore.session.get_session().create_client('sdb', region_name='us-east-1')
+    sns = botocore.session.get_session().create_client('sns', region_name='us-east-1')
     repo = Repo('testbucket')
     repodb = Repodb('testdomain')
     repodb._s3 = s3

@@ -8,7 +8,7 @@ import os
 from collections import OrderedDict
 from gzip import GzipFile
 from io import BytesIO
-from mock import patch, PropertyMock
+from mock import patch, PropertyMock, MagicMock
 
 import botocore.session
 from botocore.stub import Stubber, ANY
@@ -329,7 +329,7 @@ SHA256:
         dists.return_value = ['xenial', 'jessie']
         comps.return_value = ['main', 'nightly']
         archs.return_value = ['source', 'i386', 'amd64', 'all']
-        self.repodb._sdb = botocore.session.get_session().create_client('sdb')
+        self.repodb._sdb = botocore.session.get_session().create_client('sdb', region_name='us-east-1')
         self.maxDiff = None
         with open(os.path.join(self._dir, 'query_output.json')) as fp:
             select_response = json.loads(fp.read())
@@ -365,7 +365,7 @@ SHA256:
         dists.return_value = ['xenial', 'jessie']
         comps.return_value = ['main', 'nightly']
         archs.return_value = ['source', 'i386', 'amd64', 'all']
-        self.repodb._sdb = botocore.session.get_session().create_client('sdb')
+        self.repodb._sdb = botocore.session.get_session().create_client('sdb', region_name='us-east-1')
         self.maxDiff = None
         with open(os.path.join(self._dir, 'query_output.json')) as fp:
             select_response = json.loads(fp.read())
@@ -391,6 +391,9 @@ SHA256:
     @patch('apt_repoman.repodb.Repodb.archs', new_callable=PropertyMock)
     @patch('apt_repoman.repodb.Repodb.comps', new_callable=PropertyMock)
     def testAssemblePathData(self, comps, archs):
+        self.repodb._connection = MagicMock
+        self.repodb._connection.profile_name = 'profile'
+        self.repodb._connection.role_arn = 'role'
         comps.return_value = ['c1']
         archs.return_value = ['a1', 'all', 'source']
         dist_release_files = {'d1': 'foo'}
@@ -400,14 +403,14 @@ SHA256:
         source_files = {'d1': {'c1': {'source': 'sources'}}}
         source_gz_files = {'d1': {'c1': {'source': b'0xDEADBEEF'}}}
         leaf_release_files = {'d1': {'c1': {'a1': 'wash', 'all': 'wind', 'source': 'watch'}}}
-        expected = [('dists/d1/Release', 'foo'),
-                    ('dists/d1/Release.gpg', {'c1': {'a1': '--PGP--', 'all': '--PGP--', 'source': '--PGP--'}}),
-                    ('dists/d1/c1/binary-a1/Packages', 'packages'),
-                    ('dists/d1/c1/binary-a1/Packages.gz', b'0xDEADBEEF'),
-                    ('dists/d1/c1/binary-a1/Release', 'wash'),
-                    ('dists/d1/c1/source/Sources', 'sources'),
-                    ('dists/d1/c1/source/Sources.gz', b'0xDEADBEEF'),
-                    ('dists/d1/c1/source/Release', 'watch')]
+        expected = [('dists/d1/Release', 'foo', 'profile', 'role'),
+                    ('dists/d1/Release.gpg', {'c1': {'a1': '--PGP--', 'all': '--PGP--', 'source': '--PGP--'}}, 'profile', 'role'),
+                    ('dists/d1/c1/binary-a1/Packages', 'packages', 'profile', 'role'),
+                    ('dists/d1/c1/binary-a1/Packages.gz', b'0xDEADBEEF', 'profile', 'role'),
+                    ('dists/d1/c1/binary-a1/Release', 'wash', 'profile', 'role'),
+                    ('dists/d1/c1/source/Sources', 'sources', 'profile', 'role'),
+                    ('dists/d1/c1/source/Sources.gz', b'0xDEADBEEF', 'profile', 'role'),
+                    ('dists/d1/c1/source/Release', 'watch', 'profile', 'role')]
         returned = self.repodb._assemble_path_data(
             dist_release_files, dist_release_sigs,
             package_files, package_gz_files,

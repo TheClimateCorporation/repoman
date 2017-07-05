@@ -595,7 +595,9 @@ class Repodb(object):
         # iterate over every package returned by simpledb;
         # sort them into a nested dictionary:
         # {dist: {comp: {arch: 'Packages.txt'}}}
-        for name in query.keys():
+        # (presort by package name so that output order remains more or less
+        # consistent)
+        for name in sorted(query.keys()):
             for dist in dists:  # iterate over every dist we are publishing
                 for comp in self.comps:  # over every component we know
                     for arch in archs:  # and every architecture
@@ -644,7 +646,7 @@ class Repodb(object):
         # iterate over every package returned by simpledb;
         # sort them into a nested dictionary:
         # {dist: {comp: {'source': 'Sources.txt'}}}
-        for name in query.keys():
+        for name in sorted(query.keys()):
             for dist in dists:  # iterate over every dist we are publishing
                 for comp in self.comps:  # over every component we know
                     for src in query[name][dist][comp]['source']:
