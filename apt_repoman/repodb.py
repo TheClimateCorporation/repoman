@@ -109,7 +109,7 @@ class Repodb(object):
             domains = []
             paginator = self.sdb.get_paginator('list_domains')
             for page in paginator.paginate():
-                domains.extend(page['DomainNames'])
+                domains.extend(page.get('DomainNames', []))
             self._domain_exists = self.domain_name in domains
         return self._domain_exists
 

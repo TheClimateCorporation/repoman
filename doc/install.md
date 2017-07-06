@@ -43,6 +43,30 @@ https://apt.example.com.s3.amazonaws.com and some s3 clients will not successful
 connect to your bucket unless you specifically configure them to use [path
 addressing](http://docs.aws.amazon.com/AmazonS3/latest/dev/VirtualHosting.html).)
 
+### Region handling
+
+Repoman will obey the `AWS_DEFAULT_REGION` environment variable, and will also
+obey region configuration in the `~/.aws/config` file; see the [boto3
+configuration documentation](http://boto3.readthedocs.io/en/latest/guide/configuration.html)
+for more details.
+
+Alternatively, you can specify an AWS region to connect to with the `--region`
+flag, or you can put the `region` directive into your repoman config file:
+
+
+```
+# force connections to a specific AWS region; if unset
+# this is inherited from the environment and/or your
+# ~/.aws/config configuration file; see
+# http://boto3.readthedocs.io/en/latest/guide/configuration.html
+# for more details
+#
+#region = us-east-1
+```
+
+*Note: this is different from the `--s3-region` flag/directive, which specifies
+the region for the S3 bucket.*
+
 ## Authorization
 
 Since Repoman keeps everything of value in AWS services, it follows that you need

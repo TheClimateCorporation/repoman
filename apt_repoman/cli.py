@@ -15,6 +15,7 @@ from six import iteritems
 from six.moves import input
 
 # pypi imports
+from botocore.exceptions import ClientError
 from colors import color
 from pgpy.errors import PGPDecryptionError
 from pydpkg import Dpkg
@@ -40,13 +41,23 @@ def repo_print_config(repodb, repo):
     LOG.info('Current repo configuration:')
     LOG.info('\tSimpledb domain: %s', repodb.domain_name)
     LOG.info('\tS3 bucket: s3://%s', repo.bucket_name)
-    topic = repodb.topic_name or '---None configured---'
-    LOG.info('\tSNS Notification topic: %s', topic)
-    LOG.info('\tDistributions: %s', repodb.dists)
-    LOG.info('\tComponents: %s', repodb.comps)
-    LOG.info('\tArchitectures: %s', repodb.archs)
-    LOG.info('\tOrigin: %s', repodb.origin)
-    LOG.info('\tLabel: %s', repodb.label)
+    try:
+        topic = repodb.topic_name or '---None configured---'
+        LOG.info('\tSNS Notification topic: %s', topic)
+        LOG.info('\tDistributions: %s', repodb.dists)
+        LOG.info('\tComponents: %s', repodb.comps)
+        LOG.info('\tArchitectures: %s', repodb.archs)
+        LOG.info('\tOrigin: %s', repodb.origin)
+        LOG.info('\tLabel: %s', repodb.label)
+    except ClientError as ex:
+        # if the domain doesn't exist, we can't query it
+        # for its config...
+        if ex.response.get('Error', {}).get('Code') == 'NoSuchDomain':
+            LOG.error(
+                'SDB domain does not exist yet, did you forget to run setup?')
+        else:
+            LOG.exception(ex)
+        return 1
     return 0
 
 
@@ -374,26 +385,42 @@ def checkup(args, repodb, repo):
         LOG.fatal('Repository simpledb domain does not appear to exist; did '
                   'you forget to run setup?')
         retval = 1
-    LOG.info('checking simpledb domain accessibility')
     try:
+        LOG.info('checking simpledb domain accessibility')
         result = repodb.add_meta(test_data='foo')
         if not result or result['ResponseMetadata']['HTTPStatusCode'] != 200:
             raise Exception('Got error writing to simpledb: %s' % result)
         result = repodb.rm_meta(test_data=True)
         if not result or result['ResponseMetadata']['HTTPStatusCode'] != 200:
             raise Exception('Got error deleting from simpledb: %s' % result)
+        LOG.info('checking simpledb repo configuration')
+        for name, values in iteritems(repodb.meta):
+            if name not in ('topic_name', 'test_data'):
+                if len(values) < 1:
+                    LOG.error('Repository DB has no %ss configured, '
+                              'did you forget to run setup?', name)
+                    retval = 1
+        if repodb.topic_name:
+            LOG.info('Checking SNS topic "%s" exists', repodb.topic_name)
+            topic_arn = repodb.topic_arn
+            if not topic_arn:
+                LOG.fatal('SNS topic name "%s" does not exist and I do not '
+                          'have permissions to create it!', repodb.topic_name)
+                retval = 1
+    except ClientError as ex:
+        # if the domain doesn't exist, we can't query it
+        # for its config...
+        if ex.response.get('Error', {}).get('Code') == 'NoSuchDomain':
+            LOG.fatal(
+                'SDB domain does not exist yet, did you forget to run setup?')
+        else:
+            LOG.exception(ex)
+        retval = 1
     except Exception as ex:
         LOG.fatal('Could not successfully perform a test update against '
                   'simpledb domain %s, check your IAM permissions: %s',
                   repodb.domain_name, ex)
         retval = 1
-    LOG.info('checking simpledb repo configuration')
-    for name, values in iteritems(repodb.meta):
-        if name not in ('topic_name', 'test_data'):
-            if len(values) < 1:
-                LOG.error('Repository DB has no %ss configured, '
-                          'did you forget to run setup?', name)
-                retval = 1
     LOG.info('checking S3 bucket writability: s3://%s', repo.bucket_name)
     try:
         repo.set_key_from_string('test_key', 'test')
@@ -401,13 +428,6 @@ def checkup(args, repodb, repo):
         LOG.fatal('Could not successfully write to s3://%s/test_key, '
                   'check your IAM permissions: %s', repo.bucket_name, ex)
         retval = 1
-    if repodb.topic_name:
-        LOG.info('Checking SNS topic "%s" exists', repodb.topic_name)
-        topic_arn = repodb.topic_arn
-        if not topic_arn:
-            LOG.fatal('SNS topic name "%s" does not exist and I do not '
-                      'have permissions to create it!', repodb.topic_name)
-            retval = 1
     if retval > 0:
         LOG.fatal('Repoman system health check FAILED; see above.')
     else:
@@ -759,7 +779,10 @@ def main():
     if args.debug:
         logging.getLogger('apt_repoman').setLevel(logging.DEBUG)
 
-    connection = Connection(role_arn=args.aws_role)
+    if args.region:
+        LOG.warning('overriding default AWS region to: %s', args.region)
+
+    connection = Connection(role_arn=args.aws_role, region=args.region)
     repodb = Repodb(args.simpledb_domain, connection=connection)
     repo = Repo(args.s3_bucket, connection=connection)
 

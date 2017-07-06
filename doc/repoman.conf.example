@@ -6,6 +6,14 @@
 #
 #s3-bucket = apt-example-com
 
+# force connections to a specific AWS region; if unset
+# this is inherited from the environment and/or your
+# ~/.aws/config configuration file; see
+# http://boto3.readthedocs.io/en/latest/guide/configuration.html
+# for more details
+#
+#region = us-east-1
+
 # if set, repoman will attempt to assume this IAM role
 # before accessing any AWS APIs (other than sts.AssumeRole itself)
 #

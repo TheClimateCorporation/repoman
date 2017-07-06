@@ -11,6 +11,15 @@
         },
         {
             "Action": [
+                "sdb:ListDomains"
+            ],
+            "Resource": [
+                "*"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
                 "sns:*"
             ],
             "Resource": [
