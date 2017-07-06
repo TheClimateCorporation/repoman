@@ -12,10 +12,11 @@ LOG = logging.getLogger(__name__)
 
 class Connection(object):
 
-    def __init__(self, role_arn='', profile_name=''):
+    def __init__(self, role_arn='', profile_name='', region=None):
         self._log = LOG or logging.getLogger(__name__)
         self.role_arn = role_arn
         self.profile_name = profile_name
+        self.region = region
         self._s3 = None
         self._sdb = None
         self._sts = None
@@ -78,7 +79,10 @@ class Connection(object):
             self._log.info(
                 'using AWS credential profile %s', self.profile_name)
             try:
-                session = Session(profile_name=self.profile_name)
+                kwargs = {'profile_name': self.profile_name}
+                if self.region:
+                    kwargs['region_name'] = self.region
+                session = Session(**kwargs)
             except Exception as ex:
                 self._log.fatal(
                     'Could not connect to AWS using profile %s: %s',
@@ -87,7 +91,10 @@ class Connection(object):
         else:
             self._log.debug(
                 'getting an AWS session with the default provider')
-            session = Session()
+            kwargs = {}
+            if self.region:
+                kwargs['region_name'] = self.region
+            session = Session(**kwargs)
         if self.role_arn:
             self._log.info(
                 'attempting to assume STS self.role %s', self.role_arn)
@@ -101,10 +108,13 @@ class Connection(object):
                     'Could not assume self.role %s: %s',
                     self.role_arn, ex)
                 raise
-            session = Session(
-                aws_access_key_id=self.role_creds['AccessKeyId'],
-                aws_secret_access_key=self.role_creds['SecretAccessKey'],
-                aws_session_token=self.role_creds['SessionToken'])
+            kwargs = {
+                'aws_access_key_id': self.role_creds['AccessKeyId'],
+                'aws_secret_access_key': self.role_creds['SecretAccessKey'],
+                'aws_session_token': self.role_creds['SessionToken']}
+            if self.region:
+                kwargs['region_name'] = self.region
+            session = Session(**kwargs)
         return session
 
     def get_client(self, service_name):

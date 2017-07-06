@@ -45,6 +45,8 @@ class Config(object):
         flags.add('--aws-profile', action='store', required=False, default='',
                   env_var='REPOMAN_AWS_CREDENTIAL_PROFILE',
                   help='Use the specified profile in ~/.aws/credentials')
+        flags.add('--region', action='store', required=False,
+                  default=None, help='AWS region to connect to')
         flags.add('--aws-role', action='store', required=False, default='',
                   env_var='REPOMAN_AWS_ROLE',
                   help='Full ARN of IAM role to assume before calling any '
