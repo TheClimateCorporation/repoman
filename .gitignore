@@ -6,3 +6,6 @@ dist/
 *.whl
 wheelhouse/
 .ropeproject/
+venv*
+MANIFEST
+build/
